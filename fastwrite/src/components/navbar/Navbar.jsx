@@ -4,8 +4,8 @@ import Link from "next/link";
 function Navbar() {
   return (
     <div>
-      <div className="bg-gray-50">
-        <div className="container mx-auto flex justify-around items-center">
+      <div className="bg-gray-50 ">
+        <div className="container mx-auto flex justify-around items-center w-[90%]">
           <p className="text-gray-800 font-bold text-3xl pb-2">
             Turbo<span className="text-blue-600">Type</span>
           </p>
@@ -40,6 +40,7 @@ function Navbar() {
               Sign in
             </button>
             <svg
+              className="mx-auto md:hidden"
               xmlns="http://www.w3.org/2000/svg"
               class="icon icon-tabler icon-tabler-menu-2"
               width="32"
@@ -50,7 +51,6 @@ function Navbar() {
               fill="none"
               stroke-linecap="round"
               stroke-linejoin="round"
-              className="mx-auto md:hidden"
             >
               <path stroke="none" d="M0 0h24v24H0z" fill="none" />
               <path d="M4 6l16 0" />
