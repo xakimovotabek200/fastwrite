@@ -40,7 +40,6 @@ function Navbar() {
               Sign in
             </button>
             <svg
-              className="mx-auto md:hidden"
               xmlns="http://www.w3.org/2000/svg"
               class="icon icon-tabler icon-tabler-menu-2"
               width="32"
@@ -51,13 +50,14 @@ function Navbar() {
               fill="none"
               stroke-linecap="round"
               stroke-linejoin="round"
+              className="mx-auto md:hidden"
             >
               <path stroke="none" d="M0 0h24v24H0z" fill="none" />
               <path d="M4 6l16 0" />
               <path d="M4 12l16 0" />
               <path d="M4 18l16 0" />
             </svg>
-            <button class="hidden md:block uppercase mx-auto shadow bg-indigo-500 hover:bg-indigo-800 focus:shadow-outline focus:outline-none text-white text-xs py-3 px-8 rounded">
+            <button className="hidden md:block uppercase mx-auto shadow bg-indigo-500 hover:bg-indigo-800 focus:shadow-outline focus:outline-none text-white text-xs py-3 px-8 rounded">
               Sign up
             </button>
           </div>
