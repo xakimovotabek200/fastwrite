@@ -4,7 +4,7 @@ import Text from "@/components/text/Text";
 
 const AppLayout = ({ children }) => {
   return (
-    <div className="bg-gray-50">
+    <div className="bg-gray-50 container mx-auto">
       <Navbar />
       <Text />
       {children}

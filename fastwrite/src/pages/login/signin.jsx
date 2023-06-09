@@ -1,21 +1,15 @@
-import React from "react";
-import { useEffect, useRef } from "react";
-import { setCookie, getCookie } from "cookies-next";
-import { useRouter } from "next/router";
 import Navbar from "@/components/navbar/Navbar";
 import bcrypt from "bcryptjs";
+import { getCookie } from "cookies-next";
+import Link from "next/link";
+import { useRouter } from "next/router";
+import { useEffect, useRef } from "react";
 
 const SignIn = () => {
   const EmailInputRef = useRef(null);
   const PasswordInputRef = useRef(null);
   const router = useRouter();
 
-  const getSignIn = () => {
-    e.preventDefault();
-    setCookie("email", email.current.value);
-    setCookie("password", password.current.value);
-    router.reload();
-  };
   useEffect(() => {
     if (getCookie("email") && getCookie("password")) {
       router.push("/");
@@ -51,27 +45,29 @@ const SignIn = () => {
                 className="border rounded-lg px-3 py-2 mt-1 mb-5 text-sm w-full"
                 ref={PasswordInputRef}
               />
-              <button
-                type="button"
-                className="transition duration-200 bg-blue-500 hover:bg-blue-600 focus:bg-blue-700 focus:shadow-sm focus:ring-4 focus:ring-blue-500 focus:ring-opacity-50 text-white w-full py-2.5 rounded-lg text-sm shadow-sm hover:shadow-md font-semibold text-center inline-block"
-                onClick={(e) => SingUpForm(e)}
-              >
-                <span className="inline-block mr-2">Login</span>
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke="currentColor"
-                  className="w-4 h-4 inline-block"
+              <Link href={"/"}>
+                <button
+                  type="button"
+                  className="transition duration-200 bg-blue-500 hover:bg-blue-600 focus:bg-blue-700 focus:shadow-sm focus:ring-4 focus:ring-blue-500 focus:ring-opacity-50 text-white w-full py-2.5 rounded-lg text-sm shadow-sm hover:shadow-md font-semibold text-center inline-block"
+                  onClick={(e) => SingUpForm(e)}
                 >
-                  <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-width="2"
-                    d="M17 8l4 4m0 0l-4 4m4-4H3"
-                  />
-                </svg>
-              </button>
+                  <span className="inline-block mr-2">Login</span>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                    className="w-4 h-4 inline-block"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M17 8l4 4m0 0l-4 4m4-4H3"
+                    />
+                  </svg>
+                </button>
+              </Link>
             </div>
             <div className="py-5">
               <div className="grid grid-cols-2 gap-1">
