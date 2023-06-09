@@ -1,15 +1,13 @@
-import React from 'react'
-import Home from "../Home/Home"
-import Profile from './profileSection/Profile'
+import TypingChallenge from "@/components/text/Text";
 
 function index() {
   return (
     <div>
       {/* <Home /> */}
-
+      <TypingChallenge />
       {/* <Profile /> */}
     </div>
-  )
+  );
 }
 
-export default index
+export default index;

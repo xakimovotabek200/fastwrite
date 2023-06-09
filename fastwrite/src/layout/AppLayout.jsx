@@ -3,10 +3,11 @@ import Navbar from "@/components/navbar/Navbar";
 
 const AppLayout = ({ children }) => {
   return (
-    <div>
+    <div className="bg-gray-50 container mx-auto">
       <Navbar />
+
       {children}
-      <Footer/>
+      <Footer />
     </div>
   );
 };
