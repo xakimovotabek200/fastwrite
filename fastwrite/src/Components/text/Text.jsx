@@ -1,6 +1,7 @@
 import { useInterval } from "@mantine/hooks";
 import React, { useState, useEffect } from "react";
 import UseInterval from "react-timer-hook";
+
 const TypingChallenge = () => {
   const words = ["salom", "hello", "next", "react", "pyton"];
   const [currentWord, setCurrentWord] = useState("");
