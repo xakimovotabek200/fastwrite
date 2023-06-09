@@ -1,9 +1,10 @@
-import React from "react";
 import Link from "next/link";
+
 
 function Navbar() {
   return (
     <div>
+
       <div className="bg-gray-50">
         <div className="container mx-auto flex justify-around items-center">
           <p className="text-gray-800 font-bold text-3xl pb-2">
@@ -36,7 +37,7 @@ function Navbar() {
             </Link>
           </div>
           <div className="flex gap-4">
-            <button class="mr-[30px] md:block uppercase mx-auto shadow bg-indigo-800 hover:bg-indigo-600 focus:shadow-outline focus:outline-none text-white text-xs py-3 px-8 rounded">
+            <button className="mr-[30px] md:block uppercase mx-auto shadow bg-indigo-800 hover:bg-indigo-600 focus:shadow-outline focus:outline-none text-white text-xs py-3 px-8 rounded">
               Sign in
             </button>
             <svg
@@ -57,9 +58,18 @@ function Navbar() {
               <path d="M4 12l16 0" />
               <path d="M4 18l16 0" />
             </svg>
-            <button class="hidden md:block uppercase mx-auto shadow bg-indigo-500 hover:bg-indigo-800 focus:shadow-outline focus:outline-none text-white text-xs py-3 px-8 rounded">
+            <button className="hidden md:block uppercase mx-auto shadow bg-indigo-500 hover:bg-indigo-800 focus:shadow-outline focus:outline-none text-white text-xs py-3 px-8 rounded">
               Sign up
             </button>
+            <div>
+              <Link href={"/profileSection/Profile"}>
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-user" width="34" height="34" viewBox="0 0 24 24" stroke-width="1.5" stroke="#2c3e50" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                  <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                  <path d="M8 7a4 4 0 1 0 8 0a4 4 0 0 0 -8 0" />
+                  <path d="M6 21v-2a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v2" />
+                </svg>
+              </Link>
+            </div>
           </div>
         </div>
       </div>
