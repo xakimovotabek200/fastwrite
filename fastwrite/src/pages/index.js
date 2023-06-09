@@ -1,15 +1,15 @@
-import React from "react";
+import React from 'react'
+import Home from "../Home/Home"
+import Profile from './profileSection/Profile'
 
 function index() {
-<<<<<<< HEAD
   return (
     <div>
-      
+      {/* <Home /> */}
+
+      {/* <Profile /> */}
     </div>
   )
-=======
-  return <div></div>;
->>>>>>> 93a1bb247cf8206379c86e5c9a59cd6796b8660d
 }
 
-export default index;
+export default index
