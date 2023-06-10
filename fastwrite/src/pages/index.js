@@ -1,11 +1,9 @@
-import TypingChallenge from "@/components/text/Text";
+import Test from "@/components/text/Test";
 
 function index() {
   return (
     <div>
-      {/* <Home /> */}
-      <TypingChallenge />
-      {/* <Profile /> */}
+      <Test />
     </div>
   );
 }
