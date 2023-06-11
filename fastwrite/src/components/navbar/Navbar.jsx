@@ -1,12 +1,11 @@
 import Link from "next/link";
 
-import Button from "@mui/material/button";
 function Navbar() {
   return (
     <>
       <div>
         <div>
-          <div className="container mx-auto flex justify-around items-center w-[100%] md: w-[90%]">
+          <div className="container mx-auto flex justify-around items-center w-[100%] md:w-[90%]">
             <Link href={"/"}>
               <p className="text-gray-800 font-bold text-3xl pb-2">
                 Turbo<span className="text-blue-600">Type</span>
